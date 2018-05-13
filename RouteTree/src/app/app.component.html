@@ -1,0 +1,11 @@
+<div class="container" style="border: solid 2px orange; padding: 20px">
+  <div class="row">
+    <div class="col text-center">
+      <h1>{{ title }} Root</h1>
+      <button class="btn btn-dark" [routerLink] = "['/products']">Products</button>
+      <button class="btn btn-info" [routerLink] = "['/reviews']">Reviews</button>
+    </div>
+  </div>
+  <br>
+  <router-outlet></router-outlet>
+</div>

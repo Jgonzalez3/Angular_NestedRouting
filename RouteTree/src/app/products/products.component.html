@@ -1,0 +1,13 @@
+
+  <div class="row" style="border: solid 2px purple">
+    <div class="col-sm-12">
+      <h3>{{title}} Route</h3>
+      <!-- NO slashes in front of route means that route will append to current route in url ex: products/details/5 -->
+      <button class="btn btn-primary" [routerLink]= "['details', 5]">ProductDetails</button>
+      <button class="btn btn-warning" [routerLink]= "['brand', 5]">Brand</button>
+      <button class="btn btn-danger" [routerLink]="['category', 5]">Category</button><br><br>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+
